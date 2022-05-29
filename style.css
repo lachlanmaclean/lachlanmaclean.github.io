@@ -1,0 +1,46 @@
+
+h1{
+    color: #25ce25;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+body{
+    background-color: #070707;
+    margin:0
+    
+}
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    )
+  }
+  h2{
+    
+    color: #25ce25;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 19px;
+  
+  }
+
+  #welcome-section {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;       /*this is  what was missing */
+    flex-flow: column;  /*this is  what was missing too*/
+  }
+  
+  .welcome-header {
+    text-align: center;
+    /*vertical-align: center; useless*/
+  }
